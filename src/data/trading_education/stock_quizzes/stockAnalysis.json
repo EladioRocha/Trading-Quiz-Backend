@@ -1,0 +1,324 @@
+{
+  "title": "Stock Analysis",
+  "description": "Do you understand what moves the Stock Market? Show us what you know with this short Stock Analysis Quiz.",
+  "coins": 50,
+  "type": "Stock",
+  "questions": [
+    {
+      "question": {
+        "en": "STOCK ANALYSIS HELPS US:"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "To forecast the price accurately"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "To understand the future market direction"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "To predict most probable price in near term"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "B and C are correct"
+          },
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "USUALLY THE BEST TIME TO BUY A STOCK IS WHEN:"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "An uptrend turns down and solidly crosses the trend line"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "A downtrend turns up and stays at the trend line"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "A downtrend turns up and solidly crosses the trend line"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "An uptrend rises and remains at the trend line"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT SHOULD YOU KNOW BEFORE YOU INVEST IN THE STOCK MARKET?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Understand what your profit targets are"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Understand fundamental analysis"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Know what time frame you want to invest in"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Create a system to trade with"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Understand Technical Analysis"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "All of the above"
+          },
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT DOES FUNDAMENTAL STUDIES INVOLVE?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Studying the Books of Accounts"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Interacting with the key personals"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Studying the Macro Economy"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "All of the Above"
+          },
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "IN WHICH COUNTRY THE FTSE 100 INDEX IS USED TO MEASURE STOCK MARKET PERFORMANCE?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "France"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "United Kingdom"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "Germany"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Finland"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT CAN CAUSE A DECLINE OF A STOCK PRICE?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Lower earnings predicted"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Possible lawsuit"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Low credit ratings"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Tax problems"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "All of the above"
+          },
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT TERM REFERS TO A TEMPORARY PRICE THAT TRADER ASSUME IS A STOCK’S LOW POINT?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "False Bottom"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "Glass Bottom"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Fake Bottom"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "False Flag"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "TRUE OR FALSE: A LOW P/E RATIO OF A STOCK IS ALWAYS BETTER THAN A HIGH P/E RATIO?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "True"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "False"
+          },
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT TERM REFERS TO A SECURITY PEAKING THREE TIMES AT SIMILAR PRICE IN A SHORT PERIOD OF TIME?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Triple crown"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Triple top"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "Triple peak"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Triple win"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHICH OF THE FOLLOWING MIGHT BE A REASON FOR A STOCK MARKET TO LOSE VALUE SUDDENLY?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "A big company going bankrupt"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Fear of a global recession"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "A terrorist attack"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "All of these"
+          },
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

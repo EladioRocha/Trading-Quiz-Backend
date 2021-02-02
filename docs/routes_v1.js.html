@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: routes/v1.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: routes/v1.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>'use strict'
+
+const { isValidPassword } = require('../middlewares/users')
+
+/**
+ * @file v1.js This file contains all routes in this first version.
+ * @author Eladio Rocha Vizcaino
+ */
+
+/**
+ * This module has all routes available in api separated by section.
+ * @module controllers/v1
+ * @requires express
+ * @requires path
+ * @requires express-kun
+ * @requires middlewares/auth
+ * @requires middlewares/users
+ * @requires controllers/users
+ * @requires middlewares/quizzes
+ * @requires controllers/quizzes
+ */
+
+const express = require('express'),
+  path = require('path'),
+  { isAuth } = require(path.join(__dirname, '..', 'middlewares', 'auth')),
+  usersMiddleware = require(path.join(__dirname, '..', 'middlewares', 'users')),
+  usersController = require(path.join(__dirname, '..', 'controllers', 'users')),
+  quizzesMiddleware = require(path.join(__dirname, '..', 'middlewares', 'quizzes')),
+  quizzesController = require(path.join(__dirname, '..', 'controllers', 'quizzes')),
+  leaderboardMiddleware = require(path.join(__dirname, '..', 'middlewares', 'leaderboard')),
+  leaderboardController = require(path.join(__dirname, '..', 'controllers', 'leaderboard')),
+  notificationsMiddleware = require(path.join(__dirname, '..', 'middlewares', 'notifications')),
+  notificationsController = require(path.join(__dirname, '..', 'controllers', 'notifications')),
+  lessonsMiddleware = require(path.join(__dirname, '..', 'middlewares', 'lessons')),
+  lessonsController = require(path.join(__dirname, '..', 'controllers', 'lessons'))
+
+/**
+ * This object has the methods like GET, POST, PUT, DELETE, etc.
+ * @constant {express.Router}
+ */
+const v1 = express.Router()
+
+// ==================== USERS ==================== //
+v1.post('/users/create', usersMiddleware.verifyNewUserData, usersController.create)
+v1.post('/users/login', [usersMiddleware.verifyLoginFields, usersMiddleware.isValidPassword], usersController.login)
+
+v1.put('/users/reset/password', [isAuth, usersMiddleware.validPasswordProfileFields, usersMiddleware.isValidPassword], usersController.resetPassword)
+v1.put('/users/reset/email', [isAuth, usersMiddleware.isValidEmail], usersController.updateEmail)
+v1.put('/users/reset/username', [isAuth, usersMiddleware.isValidUsername], usersController.updateUsername)
+v1.put('/users/notifications', isAuth, usersController.updateStatusNotifications)
+
+// ==================== QUIZZES ==================== //
+v1.get('/quizzes/answers/:answerId', isAuth, quizzesController.verifyAnswer)
+v1.get('/quizzes/type/:type', isAuth, quizzesController.getMetadataQuizzes)
+v1.get('/quizzes/:quizId', isAuth, quizzesController.getQuestions)
+
+v1.post('/quizzes/result', isAuth, quizzesController.saveRecordUserQuizz)
+
+// ==================== LEADERBOARD ==================== //
+v1.get('/leaderboard', isAuth, leaderboardController.getLeaders)
+
+// ==================== NOTIFICATIONS ==================== //
+v1.get('/notifications/unviewed', isAuth, notificationsController.getUnviewed)
+
+v1.put('/notifications/viewed', isAuth, notificationsController.markAsRead)
+
+// ==================== LESSONS ==================== //
+v1.get('/lessons/type/:type', isAuth, lessonsController.getMetadataLessons)
+v1.get('/lessons/:lessonId', isAuth, lessonsController.getLesson)
+
+v1.put('/lessons/lecture', isAuth, lessonsController.markAsRead)
+
+module.exports = v1</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-controllers_leaderboard.html">controllers/leaderboard</a></li><li><a href="module-controllers_notifications.html">controllers/notifications</a></li><li><a href="module-controllers_users.html">controllers/users</a></li><li><a href="module-controllers_v1.html">controllers/v1</a></li><li><a href="module-helpers_cacheMemory.html">helpers/cacheMemory</a></li><li><a href="module-helpers_handleResponse.html">helpers/handleResponse</a></li><li><a href="module-helpers_password.html">helpers/password</a></li><li><a href="module-helpers_sanitizerString.html">helpers/sanitizerString</a></li><li><a href="module-middlewares_auth.html">middlewares/auth</a></li><li><a href="module-middlewares_users.html">middlewares/users</a></li><li><a href="module-services_leaderboardService.html">services/leaderboardService</a></li><li><a href="module-services_lessonService.html">services/lessonService</a></li><li><a href="module-services_notificationService.html">services/notificationService</a></li><li><a href="module-services_quizService.html">services/quizService</a></li><li><a href="module-services_userService.html">services/userService</a></li></ul><h3>Classes</h3><ul><li><a href="Lesson.html">Lesson</a></li><li><a href="Notification.html">Notification</a></li><li><a href="Quiz.html">Quiz</a></li><li><a href="User.html">User</a></li></ul><h3>Global</h3><ul><li><a href="global.html#answer">answer</a></li><li><a href="global.html#answers">answers</a></li><li><a href="global.html#explanation">explanation</a></li><li><a href="global.html#fs">fs</a></li><li><a href="global.html#getFileWithMatchFileName">getFileWithMatchFileName</a></li><li><a href="global.html#getSelectedFiles">getSelectedFiles</a></li><li><a href="global.html#handleSelectedFiles">handleSelectedFiles</a></li><li><a href="global.html#isCorrect">isCorrect</a></li><li><a href="global.html#main">main</a></li><li><a href="global.html#mongoose">mongoose</a></li><li><a href="global.html#question">question</a></li><li><a href="global.html#questions">questions</a></li><li><a href="global.html#quizzesDataDirectory">quizzesDataDirectory</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Tue Feb 02 2021 00:14:14 GMT-0600 (GMT-06:00)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

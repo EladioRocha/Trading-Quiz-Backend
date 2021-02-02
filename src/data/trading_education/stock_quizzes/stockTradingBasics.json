@@ -1,0 +1,312 @@
+{
+  "title": "Stock Trading Basics",
+  "description": "How well do you know the Stock Market? Do you know enough to trade stocks? Let's find out!",
+  "coins": 50,
+  "type": "Stock",
+  "questions": [
+    {
+      "question": {
+        "en": "WHAT IS A STOCK?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "A piece of ownership in a corporation"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "Total ownership of a company"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "A retirement investment"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "None of the above"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT ARE THE STOCK TICKER SYMBOLS?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "How stocks go up and down"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Little tickers seen on exchange"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Identification tag for a stock"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "None of the above"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT ARE THE LONDON STOCK EXCHANGE OPENING HOURS?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "8:00 AM - 4:30 PM (GMT+00)"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "9:00 AM - 5:30 PM (GMT+00)"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "7:30 AM - 5:00 PM (GMT+00)"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "8:30 AM - 5:00 PM (GMT+00)"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT IS A MARKET CONDITION IN WHICH INVESTORS ARE NOT CONFIDENT IN BUYING STOCKS AND WHICH LEADS TO A DECREASE IN STOCK PRICES?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Growth Stock"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Bull Market"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Bear Market"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "Capital Gain"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Diversification"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT IS CAPITALIZATION?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "The number of outstanding shares multiplied by the share price"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "Price of the stock divided by the earning per share"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "The number of stocks traded per day"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "All of the stocks issued by the company"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT DOES IPO STAND FOR?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "International Public Office"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "International Public Offering"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Initial Public Offering"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "Initial Public Office"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "TRUE OR FALSE: A COMPANY THAT EARNS A LOT OF MONEY EVERY YEAR SHOULD BE CONSIDERED AS A GOOD INVESTMENT."
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "True"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "False"
+          },
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "STOCK WITH LESS VOLATILITY, WELL-RECOGNIZED AND WELL-ESTABLISH COMPANY, LONG HISTORY OF GROWTH AND EARNINGS IS CALLED"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Large cap stock"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Blue Chip stock"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "Growth stock"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Penny stock"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT IS THE TICKER SYMBOL OF APPLE INC?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "APPL"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "AAPL"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "APL"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "AAP"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT TYPE OF STOCKS WOULD YOU WANT TO SELL SHORT?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Stocks with the potential to gain value in the future"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Stock with high corporate profits"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Stock that may be experiencing lost in the future"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "Stocks that will keep a constant value"
+          },
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

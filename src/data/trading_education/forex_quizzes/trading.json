@@ -1,0 +1,258 @@
+{
+  "title": "Trading",
+  "description": "Do you really know what defines trading and what moves the market? Show us with this short quiz!",
+  "coins": 50,
+  "type": "Forex",
+  "questions": [
+    {
+      "question": {
+        "en": "IF THERE ARE MORE SELLERS THAN BUYERS THE PRICE WILL GO:"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Up"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Down"
+          },
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "THE ILLIQUID MARKET ALSO KNOWN AS THIN MARKET IS CHARACTERIZED BY:"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "The lack of buyers and sellers"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "The lack of alternative investment venues"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "The lack of stocks traded"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT DOES SHORT SELLING MEAN?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Selling securities that the investor has borrowed and prepared to buy back later at a lower price"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "A trading strategy used to profit from a price decline"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Both"
+          },
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "THE LAST TRADING PRICE OF A SECURITY AT THE END OF THE TRADING SESSION IS THE"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Closing price"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "Low price"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "High price"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Opening price"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "SECURITIES BOUGHT AND SOLD ON SAME DAY IS CONSIDERED AS:"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Intraday Trading"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "Positional Trading"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Investments"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHEN YOU OPEN A BUY POSITION YOUR STOP LOSE SHOULD BE:"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Above the entry price"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Below the entry price"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "Below and above entry price"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "On the entry price"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHEN DOES TRADING BECOME GAMBLING?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "When your potential reward is small"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "When you are trading once a week"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "When you don’t enforce money management rules"
+          },
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "TRUE OR FALSE: HAVING A TRADING PLAN ALLOWS YOU TO TRADE WITH LESS EMOTIONS AND STRESS."
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "True"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "False"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "THE SHORTER THE TIMEFRAME YOU ARE TRADING THE _____ TIME YOU’LL NEED IN FRONT OF THE CHARTS."
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Less"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "More"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "Same"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "IN AN UPTREND THE PRICE USUALLY FORMS"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Higher highs and lower lows"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Higher highs and higher lows"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "Lower highs and lower lows"
+          },
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

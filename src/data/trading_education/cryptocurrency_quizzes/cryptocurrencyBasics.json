@@ -1,0 +1,312 @@
+{
+  "title": "Cryptocurrency Basics",
+  "description": "Do you know how the world of cryptocurrencies works? Get ready to put your knowledge to the test!",
+  "coins": 50,
+  "type": "Cryptocurrency",
+  "questions": [
+    {
+      "question": {
+        "en": "THE CRYPTOCURRENCY MARKET IS A ______ AND _______ MARKET."
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Digital and global"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "Digital and local"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Digital and Electronic"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "ICO STANDS FOR…"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "International Credit Offers"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "International Credit Organisation"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Influential Coin Organisation"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Initial Coin Offering"
+          },
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT IS A BLOCKCHAIN?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "A distributed ledger that records all transactions of a cryptocurrency"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "A method of selling Bitcoins"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "A series of blocks chained together in a line"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "The Bitcoin software protocol"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT IS THE NAME OF THE FIRST CRYPTOCURRECY EVER MADE IN 2009?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Litecoin"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Bitcoin"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "Darkcoin"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Onecoin"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHEN YOU BUY ANY CRYPTOCURRENCY YOU ARE BASICALLY BUYING A SHARE IN ITS _______."
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Community"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Network"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "Block"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Company"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHERE DO YOU STORE YOUR CRYPTOCURRENCY?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Bank account"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Floppy Disk"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Wallet"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "In your pocket"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHERE CAN YOU BUY CRYPTOCURRENCY?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "A private transaction"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "An exchange"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "A bitcoin ATM"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "All of the above"
+          },
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT IS A MINER?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "A type of blockchain"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "An algorithm that predicts the next part of the chain"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "A person doing calculations to verify a transaction"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Computers that validate and process blockchain transactions"
+          },
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT IS THE GENESIS BLOCK?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "The first block in the Blockchain"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "A famous block that hardcoded a hash of the book of Genesis into the Blockchain"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "The first block after each block halving"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "The first transaction in each block"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT IS COLD STORAGE?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "A place to hang your coat"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "A private key connected to the Internet"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "A private key not connected to the Internet"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "A desktop wallet"
+          },
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

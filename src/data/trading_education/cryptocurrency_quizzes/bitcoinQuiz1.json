@@ -1,0 +1,294 @@
+{
+  "title": "Bitcoin Quiz 1",
+  "description": "Think you are familiar with bitcoin? Then ace this quiz to prove it!",
+  "coins": 50,
+  "type": "Cryptocurrency",
+  "questions": [
+    {
+      "question": {
+        "en": "WHO CREATED BITCOIN?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "The Winklevoss Twins"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "John Mcafee"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "CIA"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Satoshi Nakamoto"
+          },
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHEN WAS THE BITCOIN NETWORK LAUNCHED? "
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "2008"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "2010"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "2009"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "2001"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "HOW MANY BITCOIN WILL EVER BE MINED?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Unlimited"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "23 million"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "3,5 million"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "21 million"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "18 million"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT IS A BITCOIN WALLET?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "A way of storing your Bitcoins"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "A way hiding how many Bitcoins you have from other people"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "A way to protect your Bitcoin"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "A way of sending your Bitcoins through Government approved pathways"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT TECHNOLOGY IS BITCOIN BUILT ON?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Bitchain"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Blocklink"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Blockchain"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "CoinLedger"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT WAS THE FIRST EVER DOCUMENTED PURCHASE OF GOODS PAID WITH BITCOIN?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Pizza"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "Beer"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Rolex watch"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "IPhone"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "TRUE OR FALSE: LOST BITCOIN WALLET CAN BE UNLOCKED."
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "True"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "False"
+          },
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "IF YOU WANTED TO SEND BITCOIN INTERNATIONALLY, WOULD YOU BE CHARGED FEES TO DO SO?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "No"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "Yes"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "IS BITCOIN TRULY ANONYMOUS? "
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Yes, people who use Bitcoin cannot have their transactions traced by anyone."
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "No, bitcoin addresses are derived from IP addresses."
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "No, all transactions are recorded on a global transparent ledger that can be traced using analytical technologies."
+          },
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHERE IS THE BITCOIN PROCESSING SERVER LOCATED?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Washington, D.C., USA"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "London, England"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Undisclosed location"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "None of the above — Bitcoin has no processing server"
+          },
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

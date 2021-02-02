@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: services/lessonService.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: services/lessonService.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>'use strict'
+
+/**
+ * @file lessonService.js The logic of the lessons like list all lessons or get one quiz etc.
+ * @author Eladio Rocha Vizcaino
+ */
+
+/**
+ * The logic of the lessons like list all lessons or get one quiz etc.
+ * @module services/lessonService
+ * @requires mongoose
+ * @requires path
+ * @requires models/Lessons
+ */
+
+
+const mongoose = require('mongoose'),
+  path = require('path'),
+  Lesson = require(path.join(__dirname, '..', 'models', 'Lessons'))
+
+module.exports = {
+  getMetadataLessons,
+  getLesson,
+  markAsRead,
+  getNextLesson,
+  userReadLesson
+}
+
+/**
+ * Get all lessons availables in our app
+ * @param {String} type - The type of lessons for example, forex, stock, etc.
+ * @returns {Array&lt;Object>} - Return the metadata of lessons.
+ */
+async function getMetadataLessons(type) {
+  try {
+    const lessons = await Lesson.find({ type })
+      .select('_id title description content coins order')
+      .sort({ order: 'asc' })
+      .lean()
+
+    return lessons
+  } catch (error) {
+    console.error(`An error occurred while getting lesson information from the service --> ${error.toString()}`)
+  }
+}
+
+/**
+ * Get specific lesson by lessonId.
+ * @param {String} lessonId - _id from specific lesson.
+ * @returns {Object} - Return the specific lesson
+ */
+async function getLesson(lessonId) {
+  try {
+    lessonId = mongoose.Types.ObjectId(lessonId)
+    const lessons = await Lesson.findOne({ _id: lessonId }).select('_id title content type order')
+    return lessons
+  } catch (error) {
+    console.error(`An error occurred while getting the lesson information --> ${lessonId} in service --> ${error.toString()}`)
+  }
+}
+
+/**
+ * Get the _id from the next lesson.
+ * @param {String} type - Type of lesson (Forex, Bitcoin, etc.).
+ * @param {Number} order - The order of lesson.
+ * @returns {String|Null} - Return null object if not exist other lesson otherwise return string _id.
+ */
+async function getNextLesson(type, order) {
+  try {
+    const lesson = await Lesson.findOne({ 
+      type,
+      order: (order + 1)
+    })
+    return (!lesson) ? null : lesson._id
+  } catch (error) {
+    console.error(`An error occurred getting the _id of the next lesson in the service --> ${error.toString()}`)
+  }
+}
+
+/**
+ * Update lecture when user finish reading.
+ * @param {String} userId - _id from specific user.
+ * @param {String} lessonId - _id from specific lecture.
+ * @returns {Number} - Return the number of coins earned.
+ */
+async function markAsRead(userId, lessonId) {
+  try {
+    userId = mongoose.Types.ObjectId(userId)
+    lessonId = mongoose.Types.ObjectId(lessonId)
+
+    const read = await userReadLesson(userId, lessonId)
+
+    if (read >= 1) {
+      return 0
+    }
+
+    const { coins } = await Lesson.findOne({ _id: lessonId }).select('coins')
+    Promise.all([
+      Lesson.updateOne(
+        { _id: lessonId },
+        {
+          $addToSet: {
+            usersId: [{ userId }]
+          }
+        }
+      ),
+      mongoose.model('User').updateOne(
+        {
+          _id: userId
+        },
+        {
+          $inc: { coins }
+        }
+      )
+    ])
+
+    return coins
+  } catch (error) {
+    console.error(`An error occurred while marking the reading as read in the service --> ${userId}--> ${lessonId} --> ${error.toString()}`)
+  }
+}
+
+async function userReadLesson(userId, lessonId) {
+  try {
+    userId = mongoose.Types.ObjectId(userId)
+    lessonId = mongoose.Types.ObjectId(lessonId)
+    const result = await Lesson.count({
+      _id: lessonId,
+      usersId: {
+        $elemMatch: {
+          userId
+        }
+      }
+    })
+
+    return result
+  } catch (error) {
+    console.error(`An error occurred while obtaining the status of the readings read by the user in the service --> ${error.toString()}`)
+  }
+}</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-controllers_leaderboard.html">controllers/leaderboard</a></li><li><a href="module-controllers_notifications.html">controllers/notifications</a></li><li><a href="module-controllers_users.html">controllers/users</a></li><li><a href="module-controllers_v1.html">controllers/v1</a></li><li><a href="module-helpers_cacheMemory.html">helpers/cacheMemory</a></li><li><a href="module-helpers_handleResponse.html">helpers/handleResponse</a></li><li><a href="module-helpers_password.html">helpers/password</a></li><li><a href="module-helpers_sanitizerString.html">helpers/sanitizerString</a></li><li><a href="module-middlewares_auth.html">middlewares/auth</a></li><li><a href="module-middlewares_users.html">middlewares/users</a></li><li><a href="module-services_leaderboardService.html">services/leaderboardService</a></li><li><a href="module-services_lessonService.html">services/lessonService</a></li><li><a href="module-services_notificationService.html">services/notificationService</a></li><li><a href="module-services_quizService.html">services/quizService</a></li><li><a href="module-services_userService.html">services/userService</a></li></ul><h3>Classes</h3><ul><li><a href="Lesson.html">Lesson</a></li><li><a href="Notification.html">Notification</a></li><li><a href="Quiz.html">Quiz</a></li><li><a href="User.html">User</a></li></ul><h3>Global</h3><ul><li><a href="global.html#answer">answer</a></li><li><a href="global.html#answers">answers</a></li><li><a href="global.html#explanation">explanation</a></li><li><a href="global.html#fs">fs</a></li><li><a href="global.html#getFileWithMatchFileName">getFileWithMatchFileName</a></li><li><a href="global.html#getSelectedFiles">getSelectedFiles</a></li><li><a href="global.html#handleSelectedFiles">handleSelectedFiles</a></li><li><a href="global.html#isCorrect">isCorrect</a></li><li><a href="global.html#main">main</a></li><li><a href="global.html#mongoose">mongoose</a></li><li><a href="global.html#question">question</a></li><li><a href="global.html#questions">questions</a></li><li><a href="global.html#quizzesDataDirectory">quizzesDataDirectory</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Tue Feb 02 2021 00:14:14 GMT-0600 (GMT-06:00)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

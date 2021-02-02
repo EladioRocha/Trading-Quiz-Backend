@@ -1,0 +1,288 @@
+{
+  "title": "Bitcoin Cash",
+  "description": "How much do you know about Bitcoin Cash? Let's find out!",
+  "coins": 50,
+  "type": "Cryptocurrency",
+  "questions": [
+    {
+      "question": {
+        "en": "WHAT IS BITCOIN CASH?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Peer-to-peer electronic cash"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "Computer network"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Different name for Bitcoin"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "The amount of Bitcoin in your wallet"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHEN WAS BITCOIN CASH CREATED?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "1 August 2017"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "1 April 2016"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "1 October 2010"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "1 January 2014"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT IS THE TOTAL SUPPLY OF BITCOIN CASH?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "45 million"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "21 million"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "23 million"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "14 million"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "BITCOIN CASH IS A RESULT OF…"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Selling Bitcoin"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Bitcoin mining"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "A hard fork from Bitcoin"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "A soft fork from Bitcoin"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT IS BITCOIN CASH TICKER SYMBOL?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "BTC"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "BCH"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "BBC"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "BTH"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT PROBLEM DOES BITCOIN CASH SOLVE?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Security issue"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Scalability issue"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "Software issue"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT IS THE MAXIMUM BLOCK SIZE OF BITCOIN CASH?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "1MB"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "2MB"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "6MB"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "8MB"
+          },
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "TRUE OR FALSE: WHEN THE HARD FORK OCCURRED THE OWNERS OF BITCOIN RECEIVED THE SAME AMOUNT OF BITCOIN CASH."
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "True"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "False"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "TRUE OR FALSE: THE VALUE OF BITCOIN CASH HAS DIRECT CONNECTION TO BITCOIN VALUE."
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "True"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "False"
+          },
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHICH OF THE FOLLOWING IS TRUE?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Bitcoin and Bitcoin Cash are two different and independent currencies"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "The block size of Bitcoin Cash is bigger than Bitcoin’s"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Bitcoin Cash is faster and cheaper to use than Bitcoin"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "All of the above"
+          },
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

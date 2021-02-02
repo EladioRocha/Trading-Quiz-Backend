@@ -1,0 +1,8 @@
+{
+  "200": {"text": "Ok", "message":"The resource has been successfully obtained.", "success": 1},
+  "400": {"text": "Bad Request", "message":"There is invalid information on the application.", "success": 0},
+  "401": {"text": "Unauthorized", "message":"You do not have permission to access the resource.", "success": 0},
+  "403": {"text": "Forbidden", "message":"The resource you requested is prohibited.", "success": 0},
+  "404": {"text": "Not Found", "message":"We couldn't find the resource you were looking for.", "success": 0},
+  "500": {"text": "Internal Server Error", "message": "A problem has occurred on the server, try again, if the problem persists contact the administrator.", "success": 0}
+}

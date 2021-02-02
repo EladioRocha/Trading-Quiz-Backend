@@ -1,0 +1,282 @@
+{
+  "title": "Fundamental Analysis",
+  "description": "What do you know about Fundamental news and how it affects the market? Prove it!",
+  "coins": 50,
+  "type": "Forex",
+  "questions": [
+    {
+      "question": {
+        "en": "WHAT IS FUNDAMENTAL ANALYSIS?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "A method of analyzing price movement by studying the Central bank decisions"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "A method of analyzing price movement by following the trades of successful traders"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "A method of analyzing price movement by using indicators and chart patterns to determine possible future price action"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "A method of analyzing price movement by examining related economic, financial, and other qualitative and quantitative factors"
+          },
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "FUNDAMENTAL ANALYSIS FOCUSES MAINLY ON:"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Chart patterns"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Economic and financial data"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "All of the above"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHICH OF THE FOLLOWING IS NOT RELATED TO FUNDAMENTAL ANALYSIS?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Important price level is broken"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "Increase in unemployment"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Rise of the oil price"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Trump elected as US President"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "TRADERS USE THE ECONOMIC CALENDAR:"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "To monitor price action"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "To monitor the release of economic events"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "To monitor meeting of central bank"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "None of the above"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT IS MORE IMPORTANT – THE ANTICIPATION OF ECONOMIC INDICATOR OR THE ACTUAL ECONOMIC RESULTS?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "The anticipation of economic indicator"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "The actual economic results"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Both of them are equally important"
+          },
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "THE MAJOR FUNDAMENTAL NEWS TRADED ON THE MARKET ARE:"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Interest rates changes"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "GDP report"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Crude oil inventories"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "All of the above"
+          },
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "TRUE OR FALSE: FUNDAMENTAL NEWS CAN RESULT INTO A CHANGE IN THE ENTIRE TREND DIRECTION."
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "True"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "False"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT IS A GOOD WAY TO PREPARE FOR AN ECONOMIC REPORT’S RELEASE?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Open a position and hope for the best"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Minutes before the release go to your charts and watch how the release is changing the price"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Think of different scenarios and be prepared to react to possible market reactions"
+          },
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "IF YOU WANT TO BUY EURO BECAUSE OF THE GROWTH OF THE GERMANY’S ECONOMIC WHICH TYPE OF ANALYSIS ARE YOU USING?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Fundamental"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "Technical"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Sentiment"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHICH OF THE FOLLOWING ECONOMIC REPORTS TYPICALLY CAUSES THE MOST VOLATILE REACTIONS FROM THE MARKET?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "NFP - Non-Farm Payroll"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "CPI - Consumer Price Index"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "PPI - Producer Price Index"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "IPI - Industrial Production Index"
+          },
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

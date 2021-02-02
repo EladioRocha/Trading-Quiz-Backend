@@ -1,0 +1,312 @@
+{
+  "title": "History of Forex Trading",
+  "description": "How well do you know the most important events in the history of the forex market? Let's test your knowledge!",
+  "coins": 50,
+  "type": "Forex",
+  "questions": [
+    {
+      "question": {
+        "en": "WHICH AGREEMENT PEGGED THE US DOLLAR VALUE TO GOLD AND MADE THE US DOLLAR THE RESERVE CURRENCY OF THE WORLD?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "The Smithsonian agreement"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "The Bretton Woods agreement"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "The Maastricht agreement"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "None of the above"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHEN DID THE MODERN FOREIGN EXCHANGE MARKET BEGIN FORMATTING?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "60’s"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "70’s"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "80’s"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "90’s"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHO IS THE PRESIDENT THAT TOOK THE WORLD OFF THE GOLD STANDARD?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Lyndon B. Johnson"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Richard Nixon"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "Gerald Ford"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Ronald Reagan"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT CAUSED THE NEED TO VALUE THE CURRENCIES AGAINST ONE OTHER?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "The removal of gold standard"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "The growth of international trade"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Global financial crisis"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "The development in banking sector"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT GAVE THE NICKNAME OF THE GBP/USD PAIR?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "The agreement between the UK and the US"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "The symbol on the US coins"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "The transatlantic cable that linked Europe and the US"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "The firs letters of each country"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT MADE THE FOREX MARKET ACCESSIBLE TO EVERYONE?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "The rise of the internet and the advent of new technologies"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "The rise of the Forex brokers"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "The development in banking sector"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "None of the above"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHERE IS THE FOREX MARKET LOCATED?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "London"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Frankfurt"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "New York"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "FX market has no specific location"
+          },
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHO IS KNOWN AS “THE MAN WHO BROKE THE BANK OF ENGLAND”?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "George Soros"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "John Major"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Stanley Druckenmiller"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHICH OF THE FOLLOWING IS NOT A MAJOR CURRENCY TRADING CENTER?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Tokyo"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Frankfurt"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "London"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Chicago"
+          },
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHICH ARE THE MAIN PARTICIPANTS IN THE FOREX MARKET?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Central Banks"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Large Banks and Commercial companies"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Speculators"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "All of the above"
+          },
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

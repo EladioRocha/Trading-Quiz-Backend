@@ -1,0 +1,473 @@
+{
+  "title": "Cryptocurrency Expert",
+  "description": "Are you a cryptocurrency expert? Prove it!",
+  "coins": 50,
+  "type": "Cryptocurrency",
+  "questions": [
+    {
+      "question": {
+        "en": "WHAT IS PROOF OF WORK?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "A way of proving that Bitcoins have been sent and received from your wallet"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "A tool used in mining to generate the next transaction"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "The competition between miners to find the correct hash"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "The competition between miners to not fully disclose transactions"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHICH IS NOT A KNOWN WALLET TYPE?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Hardware wallet"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Quantum wallet"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "Software wallet"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Paper wallet"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT IS A BITCOIN HARDWARE WALLET?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "A wallet on your mobile phone"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "A hardware device with high levels of security for storing your Bitcoins"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "A physical copy or printout of your public and private keys"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "A household safe with Bitcoins in it"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT IS THE DIFFERENCE BETWEEN A SOFT FORK AND A HARD FORK?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "A soft fork happens when the code of a project is copied with the permission of the original developers. A hard fork happens when the code of a project is copied without the permission of the original developers."
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "A hard fork is a backwards-incompatible protocol change that makes previously invalid blocks or transactions valid. A soft fork is a backwards-compatible protocol change where only previously valid blocks or transactions invalid."
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "A hard fork occurs when miners in a mining pool cannot agree on how the block reward should be divided. A soft fork occurs when miners in a mining pool collectively decide to change how block rewards should be distributed."
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "None of the above."
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHICH COUNTRY BANS ICOS?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "USA"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Canada"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "United Kingdom"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "China"
+          },
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "IN WHICH COUNTRY IS \"CRYPTO VALLEY\" LOCATED?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "France"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Switzerland"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "Canada"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "USA"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "The Netherlands"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT IS A HARD CAP?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "The total amount of capital collected at which a crowdsale will be considered a success"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "The maximum amount of capital a crowdsale received during the ICO"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "The amount required to start an ICO"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "The minimal amount required to participate in an ICO"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHICH OF THE FOLLOWING IS TRUE ABOUT SMART CONTRACT?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "A smart contract is a computer code"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "A smart contract allows the exchange of any asset, including money and real estate"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "A smart contract keeps the anonymity of the involved parties"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "All of the above"
+          },
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT DOES A \"DEAD BITCOIN\" MEAN?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "A bitcoin that has been hacked or stolen"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "A bitcoin that has been used in an illegal transaction"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "A bitcoin which can no longer be accessed"
+          },
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHERE DOES THE TERM \"HODL\" COME FROM?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Abbreviation used by Satoshi Nakamoto for “Hold on for dear life”"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Slip of the tongue of Roger Ver"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Typo by a user in a bitcoin-forum"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "It’s not quite known where the term originates"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT IS NOT A POSSIBLE ATTACK-SCENARIO ON THE BITCOIN BLOCKCHAIN?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "51% Attack"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Sybil-Attack"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Double spent"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "PIN-Attack"
+          },
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHICH IS NOT TRUE ABOUT STABLECOINS?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "They are digital assets"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "They can be used to carry out transactions"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "They aim to mimic traditional stable currencies"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Stablecoins are subject to the extreme price volatility"
+          },
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "PROOF TO VERIFY THAT TRANSACTIONS ARE VALID WITHOUT REVEALING ANY INFORMATION ABOUT THESE TRANSACTIONS, PROVIDING PRIVACY TO THE TRANSACTION WHILE MAINTAINING ITS LEGITIMACY?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Privacy coins"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Zero-knowledge proof"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "Smart contract"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Proof of stake"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "HOW OFTEN DOES THE BITCOIN BLOCK REWARD HALVE?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "2 Years or 100,000 blocks"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Every 210,000 blocks or every 4 years"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "It doesn't halve"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Every 6 months or 25,000 blocks"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT IS SHA-256?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "A secure hashing algorithm used by Bitcoin, originally designed by the NSA"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "A set of rules that miners and nodes must follow "
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "A crypto forum for blockchain enthusiasts"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "The language Satoshi and early developers used to communicate behind closed doors"
+          },
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

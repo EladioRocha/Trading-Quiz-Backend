@@ -1,0 +1,312 @@
+{
+  "title": "Bitcoin Quiz 2",
+  "description": "What do you really know about bitcoin? Let's see if you've really got the knowledge!",
+  "coins": 50,
+  "type": "Cryptocurrency",
+  "questions": [
+    {
+      "question": {
+        "en": "WHAT IS A MINING POOL?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "A syndicate of miners grouping together to lower the volatility of returns"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "A syndicate of miners grouping together to increase their returns"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "A syndicate of miners profits from 1 day of mining Bitcoin"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "A refreshing place to cool off after a long hard days mining"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT IS A PRIVATE KEY IN BITCOIN?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "The password to your account"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Performing a transaction anonymously"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "The secret number that generates your public address"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "The ability to access the Blockchain"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT IS THE NAME OF THE SMALLEST UNIT OF THE BITCOIN CURRENCY RECORDED ON THE BLOCKCHAIN?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Bit"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Satoshi"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "Naki"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Byte"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT IS A “DEAD BITCOIN”?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "A bitcoin that has been hacked or stolen"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "A bitcoin that has been used in an illegal transaction"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "A bitcoin which can no longer be accessed"
+          },
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHERE IS BITCOIN ILLEGAL?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Everywhere"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "United States"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "China"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Ecuador"
+          },
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHICH EXCHANGE FAMOUSLY COLLAPSED IN 2014 DUE TO THE LARGEST BITCOIN HACK EVER?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "Bitcoin Global Exchange"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Bitstamp"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Mt. Gox"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "Bitfinex"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT ARE THE ACCEPTED BITCOIN CURRENCY CODES?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "BTC or BIT"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "BIT or XBT"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "BCN or LTC"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "BTC or XBT"
+          },
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT WAS THE BTC/USD EXCHANGE RATE WHEN IT FIRST STARTED TRADING ON AN ONLINE EXCHANGE?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "$1 per Bitcoin"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "$550 per Bitcoin"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "$0.003 per Bitcoin"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "$10 per Bitcoin"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHAT WAS THE HIGHEST BITCOIN PRICE EVER?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "$41,000"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "$20,000"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "$18,000"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "$17,000"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "en": "WHICH PERFORMER WAS THE FIRST TO START ACCEPTING BITCOIN FOR THEIR RECORDS?"
+      },
+      "answers": [
+        {
+          "answer": {
+            "en": "50 Cent"
+          },
+          "isCorrect": true
+        },
+        {
+          "answer": {
+            "en": "Childish Gambino"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Björk"
+          },
+          "isCorrect": false
+        },
+        {
+          "answer": {
+            "en": "Eminem"
+          },
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}
