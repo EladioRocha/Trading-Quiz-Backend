@@ -28,4 +28,4 @@ app.use(morgan('dev'))
 /******************** LOAD API ROUTES ********************/
 app.use('/v1', v1)
 
-app.listen(3000, _ => console.log('SERVER RUN'))
+app.listen(process.env.PORT || process.env.PORT_DEV, _ => console.log('SERVER RUN'))

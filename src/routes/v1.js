@@ -66,7 +66,7 @@ v1.put('/notifications/viewed', isAuth, notificationsController.markAsRead)
 
 // ==================== LESSONS ==================== //
 v1.get('/lessons/type/:type', isAuth, lessonsController.getMetadataLessons)
-v1.get('/lessons/:lessonId', isAuth, lessonsController.getLesson)
+v1.get('/lessons/:lessonId', [isAuth, lessonsMiddleware.isValidLesson], lessonsController.getLesson)
 
 v1.put('/lessons/lecture', isAuth, lessonsController.markAsRead)
 

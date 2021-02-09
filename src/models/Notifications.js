@@ -15,7 +15,6 @@ const mongoose = require('mongoose')
  */
 
 /**
- * @todo - Add fields en, es, etc in title, description, etc.
  * @todo - Refactor field language to [{iso: es}, {iso: en}]
  */
 const NotificationSchema = new mongoose.Schema(

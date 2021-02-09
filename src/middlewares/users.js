@@ -38,43 +38,43 @@ async function verifyNewUserData(req, res, next) {
 
     if (!sanitizer.isValidLenString(username, 2, 20)) {
       return res.status(400).json({
-        ...response(400, 'El nombre del usuario tiene una longitud invalida. 2 - 20'),
+        ...response(400, 'Username has invalid length. 2 - 20'),
         data: null
       })
     }
     if (!sanitizer.isValidLenString(email, 6, 100)) {
       return res.status(400).json({
-        ...response(400, 'El correo electronico tiene una longitud invalida. 6 - 50'),
+        ...response(400, 'The email has an invalid length. 6 - 50'),
         data: null
       })
     }
     if (!sanitizer.isValidLenString(password, 6, 100)) {
       return res.status(400).json({
-        ...response(400, 'La contraseña tiene una longitud invalida. 6 - 100'),
+        ...response(400, 'The password has an invalid length. 6 - 100'),
         data: null
       })
     }
     if (username.indexOf(' ') >= 0) {
       return res.status(400).json({
-        ...response(400, 'El nombre de usuario no puede contener espacios.'),
+        ...response(400, 'Username cannot contain spaces'),
         data: null
       })
     }
     if (email.indexOf(' ') >= 0) {
       return res.status(400).json({
-        ...response(400, 'El correo electronico no puede contener espacios.'),
+        ...response(400, 'The email cannot contain spaces'),
         data: null
       })
     }
     if (await existUserInDb(email)) {
       return res.status(400).json({
-        ...response(400, 'El correo electronico ya ha sido registrado anteriormente.'),
+        ...response(400, 'The email has already been registered previously'),
         data: null
       })
     }
     if (await existUserInDb(username)) {
       return res.status(400).json({
-        ...response(400, 'El nombre de usuario ya ha sido registrado anteriormente.'),
+        ...response(400, 'Username has already been registered previously'),
         data: null
       })
     }
@@ -86,7 +86,7 @@ async function verifyNewUserData(req, res, next) {
 
     next()
   } catch (error) {
-    console.error(`Ha ocurrido un error al verificar la información del nuevo usuario --> ${error.toString()}`)
+    console.error(`An error occurred while verifying the information of the new user --> ${error.toString()}`)
   }
 }
 
@@ -94,7 +94,7 @@ async function existUserInDb(user) {
   try {
     return await userService.getUser(user)
   } catch (error) {
-    console.error(`Ha ocurrido un error al verificar la existencia del correo en nuestra base de datos --> ${error.toString()}`)
+    console.error(`An error has occurred when verifying the existence of the mail in our database --> ${error.toString()}`)
   }
 }
 
@@ -106,7 +106,7 @@ async function verifyLoginFields(req, res, next) {
       user.indexOf(' ') >= 0 ||
       !sanitizer.isValidLenString(password, 6, 100)) {
       return res.status(400).json({
-        ...response(400, 'El nombre de usuario o contraseña son invalidos.'),
+        ...response(400, 'Username or password is invalid'),
         data: null
       })
     }
@@ -118,7 +118,7 @@ async function verifyLoginFields(req, res, next) {
 
     next()
   } catch (error) {
-    console.error(`Ha ocurrido un error al verificar la información del login del usuario --> ${error.toString()}`)
+    console.error(`An error occurred while verifying the user's login information --> ${error.toString()}`)
   }
 }
 
@@ -127,19 +127,19 @@ async function validPasswordProfileFields(req, res, next) {
     const { password, newPassword } = sanitizer.sanitizeAllValluesInObjHTML(sanitizer.trimAllValuesInObj(req.body))
     if (!sanitizer.isValidLenString(password, 6, 100)) {
       return res.status(400).json({
-        ...response(400, 'La contraseña actual es invalida.'),
+        ...response(400, 'The current password is invalid'),
         data: null
       })
     }
     if (!sanitizer.isValidLenString(newPassword, 6, 100)) {
       return res.status(400).json({
-        ...response(400, 'La contraseña tiene una longitud invalida. 6 - 100.'),
+        ...response(400, 'The password has an invalid length. 6 - 100'),
         data: null
       })
     }
     if (password === newPassword) {
       return res.status(400).json({
-        ...response(400, 'Las contraseñas no pueden ser iguales.'),
+        ...response(400, 'Passwords cannot be the same'),
         data: null
       })
     }
@@ -149,7 +149,7 @@ async function validPasswordProfileFields(req, res, next) {
 
     next()
   } catch (error) {
-    console.error(`Ha ocurrido un error al verificar la contraseña del usuario --> ${error.toString()}`)
+    console.error(`An error occurred while verifying the user's password --> ${error.toString()}`)
   }
 }
 
@@ -161,20 +161,20 @@ async function isValidPassword(req, res, next) {
 
     if(!hashPassword) {
       return res.status(400).json({
-        ...response(400, 'Nombre de usuario o contraseña invalidos.'),
+        ...response(400, 'Invalid username or password'),
         data: null
       })
     }
     if (!validPassword) {
       return res.status(400).json({
-        ...response(400, 'Campo de contraseña actual no valido.'),
+        ...response(400, 'Invalid current password field'),
         data: null
       })
     }
 
     next()
   } catch (error) {
-    console.error(`Ha ocurrido un error al validar la contraseña del usuario --> ${error.toString()}`)
+    console.error(`An error occurred while validating the user's password --> ${error.toString()}`)
   }
 }
 
@@ -183,28 +183,27 @@ async function isValidEmail(req, res, next) {
     const { email } = res.locals.user,
       { newEmail } = sanitizer.sanitizeAllValluesInObjHTML(sanitizer.trimAllValuesInObj(req.body))
 
-    console.log('EMAIL: ', email, 'NEWEMAIL:', newEmail)
     if (email === newEmail) {
       return res.status(400).json({
-        ...response(400, 'El correo no puede ser igual.'),
+        ...response(400, 'The mail cannot be the same'),
         data: null
       })
     }
     if (!sanitizer.isValidLenString(newEmail, 6, 50)) {
       return res.status(400).json({
-        ...response(400, 'El correo electronico tiene una longitud invalida. 6 - 50.'),
+        ...response(400, 'The email has an invalid length. 6 - 50'),
         data: null
       })
     }
     if (newEmail.indexOf(' ') >= 0) {
       return res.status(400).json({
-        ...response(400, 'El correo electronico no puede contener espacios.'),
+        ...response(400, 'The email cannot contain spaces'),
         data: null
       })
     }
     if (await existUserInDb(newEmail)) {
       return res.status(400).json({
-        ...response(400, 'El correo electronico ya ha sido registrado anteriormente.'),
+        ...response(400, 'The email has already been registered previously'),
         data: null
       })
     }
@@ -212,7 +211,7 @@ async function isValidEmail(req, res, next) {
     res.locals.user.newEmail = newEmail
     next()
   } catch (error) {
-    console.error(`Ha ocurrio un error al validar el correo del usuario --> ${error.toString()}`)
+    console.error(`An error occurred when validating the user's email --> ${error.toString()}`)
   }
 }
 
@@ -223,25 +222,25 @@ async function isValidUsername(req, res, next) {
 
     if (username === newUsername) {
       return res.status(400).json({
-        ...response(400, 'El nombre de usuario no puede ser igual.'),
+        ...response(400, 'Username cannot be the same'),
         data: null
       })
     }
     if (!sanitizer.isValidLenString(newUsername, 2, 20)) {
       return res.status(400).json({
-        ...response(400, 'El nombre del usuario tiene una longitud invalida. 2 - 20'),
+        ...response(400, 'Username has invalid length. 2 - 20'),
         data: null
       })
     }
     if (newUsername.indexOf(' ') >= 0) {
       return res.status(400).json({
-        ...response(400, 'El nombre de usuario no puede contener espacios.'),
+        ...response(400, 'Username cannot contain spaces'),
         data: null
       })
     }
     if (await existUserInDb(newUsername)) {
       return res.status(400).json({
-        ...response(400, 'El nombre de usuario ya ha sido registrado anteriormente.'),
+        ...response(400, 'Username has already been registered previously'),
         data: null
       })
     }
@@ -249,6 +248,6 @@ async function isValidUsername(req, res, next) {
     res.locals.user.newUsername = newUsername
     next()
   } catch (error) {
-    console.error(`Ha ocurrio un error al validar el correo del usuario --> ${error.toString()}`)
+    console.error(`An error occurred when validating the user's email --> ${error.toString()}`)
   }
 }

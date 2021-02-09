@@ -30,9 +30,17 @@ module.exports = {
  * @param {String} quizId - The objectId of selected quiz.
  * @returns {Object|Null} - Return the result, if quiz not exist in database return null object.
  */
-async function getQuestionsQuiz(quizId) {
+async function getQuestionsQuiz(quizId, iso) {
   try {
     quizId = mongoose.Types.ObjectId(quizId)
+    const $project = {
+      _id: 1,
+    }
+    $project[`title.${iso}`] = 1
+    $project[`questions.answers.answer.${iso}`] = 1
+    $project[`questions.question.${iso}`] = 1
+    $project[`questions._id`] = 1
+    $project[`questions.answers._id`] = 1
 
     const result = await Quiz.aggregate([
       {
@@ -40,13 +48,8 @@ async function getQuestionsQuiz(quizId) {
           _id: quizId
         }
       },
-      { $unset: ['questions.answers.isCorrect', 'questions.answers.explanation'] },
       {
-        $project: {
-          _id: 1,
-          questions: 1,
-          title: 1
-        }
+        $project
       }
     ])
     return result
@@ -64,7 +67,7 @@ async function verifyAnswer(answerId) {
   try {
     answerId = mongoose.Types.ObjectId(answerId)
 
-    const [ result ] = await Quiz.aggregate([
+    const [result] = await Quiz.aggregate([
       {
         $match: {
           'questions.answers': {
@@ -140,17 +143,17 @@ async function recordAnswersUserQuiz(userId, quizId, answers) {
         }
       }
     )
-    .select('_id coins questions')
-    .lean(),
-        sizeQuestions = result.questions.length
+      .select('_id coins questions')
+      .lean(),
+      sizeQuestions = result.questions.length
 
-        
+
     delete result.questions
     answers = answers.map(answer => verifyAnswer(answer.answerId))
     answers = await Promise.all(answers)
     answers = answers.reduce((count, answer) => count += (answer === true) ? 1 : 0)
-    
-    if(answers > sizeQuestions) {
+
+    if (answers > sizeQuestions) {
       answers = sizeQuestions
     }
 
@@ -165,7 +168,7 @@ async function recordAnswersUserQuiz(userId, quizId, answers) {
         $inc: { coins: earnedCoins }
       }
     )
-    
+
     return earnedCoins
   } catch (error) {
     console.error(`An error occurred while saving the user's score in the service --> ${error.toString()}`)
@@ -177,9 +180,14 @@ async function recordAnswersUserQuiz(userId, quizId, answers) {
  * @param {String} type - The type of quizzes for example, forex, stock, etc.
  * @returns {Array<Object>} - Return the metadata of quizzes.
  */
-async function getMetadataQuizzes(type) {
+async function getMetadataQuizzes(type, iso) {
   try {
-    const quizzes = await Quiz.find({ type }).select('_id title description coins')
+    const query = {}
+    query[`type.${iso}`] = type
+    const quizzes = await Quiz.find(query)
+      .select(`_id title.${iso} description.${iso} coins`)
+      .lean()
+
     return quizzes
   } catch (error) {
     console.error(`An error has occurred when obtaining the information of the quizzes in the service --> ${error.toString()}`)

@@ -30,9 +30,10 @@ module.exports = {
 
 async function getQuestions(req, res) {
   try {
-    const { quizId } = req.params
-    const quiz = await quizService.getQuestionsQuiz(quizId)
-
+    const { quizId } = req.params,
+      { iso } = req.headers,
+      quiz = await quizService.getQuestionsQuiz(quizId, iso)
+  
     res.status(200).json({
       ...response(200),
       data: { quiz }
@@ -59,8 +60,9 @@ async function verifyAnswer(req, res) {
 async function getMetadataQuizzes(req, res) {
   try {
     const { type } = req.params,
-      quizzes = await quizService.getMetadataQuizzes(type)
-
+      { iso } = req.headers,
+      quizzes = await quizService.getMetadataQuizzes(type, iso)
+      
     res.status(200).json({
       ...response(200),
       data: { quizzes }

@@ -1,0 +1,7 @@
+{
+  "title": "How does cryptocurrency works?",
+  "content": "<p>Cryptocurrencies are exchanged from person to person on the web without a middleman, like a bank or government. It´s like the wild, wild west of the digital world. There´s no marshal to uphold the law.</p><p>Here´s what I mean: Have you ever hired a kid in your neighborhood to mow your lawn or watch your dog while you were out of town? Chances are, you paid them in cash. You didn´t need to go to the bank to make a formal transaction. That´s what it´s like to exchange cryptocurrencies. They are <strong>decentralized</strong>: No government or bank controls how they´re produced, what their value is, or how they´re exchanged.</p><p>As a result, cryptocurrencies are worth whatever people are willing to pay or exchange for them.</p><p>Now hang with me, people. We´re about to get techy! You store your cryptocurrency in a digital wallet—usually in an app or through the vendor where you purchase your coins. Your wallet gives you a private key—a unique code that you enter in order to digitally 'sign off' on purchases. It´s mathematical proof that the exchange was legit.</p><p>Cryptocurrencies operate on what is called blockchain technology. A blockchain is like a really long receipt that keeps growing with each exchange. It´s a public record of all of the transactions that have ever happened in a given cryptocurrency.</p>",
+  "coins": 500,
+  "order": 2,
+  "type": "Cryptocurrency"
+}

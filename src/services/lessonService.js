@@ -67,7 +67,7 @@ async function getLesson(lessonId) {
  */
 async function getNextLesson(type, order) {
   try {
-    const lesson = await Lesson.findOne({ 
+    const lesson = await Lesson.findOne({
       type,
       order: (order + 1)
     })

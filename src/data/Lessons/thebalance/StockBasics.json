@@ -1,0 +1,7 @@
+{
+  "title": "Stock Basics",
+  "content": "<p>The first step to understanding the stock market is knowing the lingo. Here are a few commonly used words and phrases:</p><ul><li><strong>Earnings per Share</strong>: The total company profit divided by the number of stock shares outstanding.</li><li><strong>Going Public</strong>: Slang for when a company plans to have an IPO of its stock.</li><li><strong>IPO</strong>: Short for Initial Public Offering, when a company sells its shares of stock for the first time.</li><li><strong>Market Cap</strong>: Short for Market Capitalization, the amount of money you would have to pay if you bought every single share of stock in a company. To calculate market cap, multiply the number of shares by the price per share.</li><li><strong>Share</strong>: A share, or a single common stock, represents one unit of an investor´s ownership in a share of the profits, losses, and assets of a company. A company creates shares when it carves itself into pieces and sells them to investors in exchange for cash.</li><span></span><li><strong>Ticker Symbol</strong>: A short group of letters that represents a particular stock as listed on the stock market. For example, The Coca-Cola Company has a ticker symbol of KO, and Johnson Johnson has a ticker symbol of JNJ.</li><li><strong>Underwriter</strong>: The financial institution or investment bank that does all of the paperwork and orchestrates a company´s IPO.</li> </ul>",
+  "coins": 500,
+  "order": 7,
+  "type": "Stock"
+}

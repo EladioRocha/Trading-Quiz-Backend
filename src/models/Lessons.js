@@ -15,22 +15,31 @@ const mongoose = require('mongoose')
  */
 
 /**
- * @todo - Add fields en, es, etc in title, description, etc.
+ * @todo - Refactor field language to [{iso: es}, {iso: en}]
  */
 const LessonSchema = new mongoose.Schema(
   {
     /**
      * The text that appears on the card.
      */
-    title: { type: String, required: true, minlength: 1, maxlength: 300 },
+    title: {
+      en: { type: String, required: true, minlength: 1, maxlength: 300 },
+      es: { type: String, required: false, minlength: 1, maxlength: 300 }
+    },
     /**
      * Extract of main content.
      */
-    description: { type: String, default: '', minlength: 0, maxlength: 500 },
+    description: {
+      en: { type: String, required: true, minlength: 1, maxlength: 500 },
+      es: { type: String, required: false, minlength: 1, maxlength: 500 }
+    },
     /**
      * Content of the current lesson
      */
-    content: { type: String, required: true, minlength: 1, maxlength: 5000 },
+    content: {
+      en: { type: String, required: true, minlength: 1, maxlength: 5000 },
+      es: { type: String, required: false, minlength: 1, maxlength: 5000 }
+    },
     /**
      * Amount of coins earned by take the lesson.
      */
@@ -38,7 +47,10 @@ const LessonSchema = new mongoose.Schema(
     /**
      * The type of quiz, for example Forex, Stock, Cryptocurrency, etc.
      */
-    type: { type: String, required: true },
+    type: {
+      en: { type: String, required: true, minlength: 1, maxlength: 100 },
+      es: { type: String, required: false, minlength: 1, maxlength: 100 }
+    },
     /**
      * The ascending order to order lessons.
      */

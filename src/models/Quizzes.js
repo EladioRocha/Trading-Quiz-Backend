@@ -15,7 +15,6 @@ const mongoose = require('mongoose')
  */
 
 /**
- * @todo - Add fields en, es, etc in title, description, etc.
  * @todo - Refactor field language to [{iso: es}, {iso: en}]
  */
 const QuizSchema = new mongoose.Schema(
@@ -23,11 +22,17 @@ const QuizSchema = new mongoose.Schema(
     /**
      * The text that appears on the card.
      */
-    title: { type: String, required: true, minlength: 1, maxlength: 300 },
+    title: {
+      en: { type: String, required: true, minlength: 1, maxlength: 300 },
+      es: { type: String, required: false, minlength: 1, maxlength: 300 }
+    },
     /**
      * Description of the current quiz
      */
-    description: { type: String, required: true, minlength: 1, maxlength: 300 },
+    description: {
+      en: { type: String, required: true, minlength: 1, maxlength: 500 },
+      es: { type: String, required: false, minlength: 1, maxlength: 500 }
+    },
     /**
      * Store all questions from one quiz with corresponding possibles answers.
      */
@@ -57,7 +62,10 @@ const QuizSchema = new mongoose.Schema(
         /**
          * The explanation why the answer is correct or not.
          */
-        explanation: { type: String, required: false, default: '', maxlength: 500 }
+        explanation: {
+          en: { type: String, required: true, minlength: 1, maxlength: 500 },
+          es: { type: String, required: false, minlength: 1, maxlength: 500 }
+        }
       }]
     }],
     /**
@@ -67,7 +75,10 @@ const QuizSchema = new mongoose.Schema(
     /**
      * The type of quiz, for example Forex, Stock, Cryptocurrency, etc.
      */
-    type: { type: String, required: true },
+    type: {
+      en: { type: String, required: true, minlength: 1, maxlength: 100 },
+      es: { type: String, required: false, minlength: 1, maxlength: 100 }
+    },
     /**
      * User who have played a quiz.
      */

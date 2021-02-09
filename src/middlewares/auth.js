@@ -29,7 +29,7 @@ function isAuth(req, res, next) {
     const token = req.headers.Authorization || req.headers.authorization
     if(!token) {
       return res.status(401).json({
-        ...response(401, 'Acceso denegado. No se ha recibido ningún token.'),
+        ...response(401, 'Access denied. No token has been received'),
         data: null
       })
     } 
@@ -38,7 +38,7 @@ function isAuth(req, res, next) {
 
     if(!userToken) {
       return res.status(400).json({
-        ...response(400, 'El token ha expirado, inicie sesión nuevamente.'),
+        ...response(400, 'The token has expired, please login again'),
         data: null
       })
     }
@@ -47,6 +47,6 @@ function isAuth(req, res, next) {
 
     next()
   } catch (error) {
-    console.error(`Ha ocurrido un error al verificar la autenticación del usuario --> ${error.toString()}`)
+    console.error(`An error occurred while verifying user authentication --> ${error.toString()}`)
   }
 }
