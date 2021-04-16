@@ -1,7 +1,5 @@
 'use strict'
 
-const { isValidPassword } = require('../middlewares/users')
-
 /**
  * @file v1.js This file contains all routes in this first version.
  * @author Eladio Rocha Vizcaino
