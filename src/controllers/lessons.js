@@ -36,7 +36,7 @@ async function getMetadataLessons(req, res) {
 
     for(const lesson of lessons) {
       const result = await lessonService.userReadLesson(_id, lesson._id)
-      lesson.readingTime = readingTime(lesson.content, 160).text
+      lesson.readingTime = readingTime(lesson.content.en, 160).text
       lesson.statusRead = (result >= 1) ? true : false
       delete lesson.content
 
@@ -55,7 +55,7 @@ async function getLesson(req, res) {
   try {
     const { lessonId } = req.params,
       lesson = await lessonService.getLesson(lessonId),
-      nextLessonId = await lessonService.getNextLesson(lesson.type, lesson.order)
+      nextLessonId = await lessonService.getNextLesson(lesson.type.en, lesson.order)
 
     res.status(200).json({
       ...response(200),

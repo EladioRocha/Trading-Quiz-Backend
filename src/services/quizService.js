@@ -36,9 +36,9 @@ async function getQuestionsQuiz(quizId, iso) {
     const $project = {
       _id: 1,
     }
-    $project[`title.${iso}`] = 1
-    $project[`questions.answers.answer.${iso}`] = 1
-    $project[`questions.question.${iso}`] = 1
+    $project[`title.en`] = 1
+    $project[`questions.answers.answer.en`] = 1
+    $project[`questions.question.en`] = 1
     $project[`questions._id`] = 1
     $project[`questions.answers._id`] = 1
 
@@ -183,9 +183,10 @@ async function recordAnswersUserQuiz(userId, quizId, answers) {
 async function getMetadataQuizzes(type, iso) {
   try {
     const query = {}
-    query[`type.${iso}`] = type
+    query['type.en'] = type
+    console.log(query)
     const quizzes = await Quiz.find(query)
-      .select(`_id title.${iso} description.${iso} coins`)
+      .select(`_id title.en description.en coins`)
       .lean()
 
     return quizzes

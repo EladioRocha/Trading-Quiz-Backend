@@ -33,7 +33,8 @@ module.exports = {
  */
 async function getMetadataLessons(type) {
   try {
-    const lessons = await Lesson.find({ type })
+    console.log("El tipo: ", type)
+    const lessons = await Lesson.find({ 'type.en': type })
       .select('_id title description content coins order')
       .sort({ order: 'asc' })
       .lean()
@@ -68,7 +69,7 @@ async function getLesson(lessonId) {
 async function getNextLesson(type, order) {
   try {
     const lesson = await Lesson.findOne({
-      type,
+      'type.en': type,
       order: (order + 1)
     })
     return (!lesson) ? null : lesson._id

@@ -17,7 +17,7 @@ const express = require('express'),
 env.config({ path: path.join(__dirname, '..', '.env') })
 /******************** CONNECT DATABASE ********************/
 
-mongoose.connect(process.env.MONGO_URI_DEV)
+mongoose.connect(process.env.MONGO_URI_LOCAL)
 
 /******************** LOAD APP MIDDLEWARES ********************/
 app.use(cors())
